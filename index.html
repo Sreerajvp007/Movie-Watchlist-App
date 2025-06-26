@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbox">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">WatchWise</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <i class="fa-solid fa-list fa-2xl" style="color: #ffffff;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+    </div>
+    </nav>
+    <section id="hero">
+      <div class="container-fluid h-100">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header bg-danger">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Watch List</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-dark" id="offBody">
+                <h1>Explore Your day</h1>
+                
+            </div>
+            </div>
+        <div class="row d-flex flex-column justify-content-center align-items-center h-100 search-sec mt-1">
+            <form class="d-flex justify-content-center align-items-center col-11 col-md-5 mt-5 " role="search">
+                <input id="inputSearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button id="inputBtn" class="btn inputBtn border-0 px-4 text-white" type="button" onclick="searchMovies()">Search</button>
+            </form>
+            <section class="result-section mt-1 w-100">
+                <div class="search-items d-flex flex-column justify-content-center align-items-center" id="searchItems">
+    
+                </div>
+            
+            </section>
+        </div>
+      </div>
+      
+
+    </section>
+    <script src="./assets/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
